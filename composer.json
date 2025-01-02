@@ -1,0 +1,42 @@
+{
+    "name": "devdot/churchtools-oauth2-client",
+    "description": "OAuth2 Client for ChurchTools",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authentication",
+        "churchtools"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Devdot\\ChurchTools\\OAuth2\\Client\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Kuschan",
+            "email": "mail@thomaskuschan.de"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "league/oauth2-client": "^2.8"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "^3.11",
+        "phpunit/phpunit": "^11.5"
+    },
+    "scripts": {
+        "check-static": "phpstan analyse src --level=8",
+        "format": "phpcbf --standard=PSR12 src tests",
+        "test": "phpunit tests"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
