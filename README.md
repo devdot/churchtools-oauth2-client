@@ -3,6 +3,12 @@ devdot/churchtools-oauth2-client
 
 *OAuth2 Client for ChurchTools*
 
+# Installation
+
+```
+composer require devdot/churchtools-oauth2-client
+```
+
 # Basic Usage
 
 ```php
